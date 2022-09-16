@@ -1,0 +1,316 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "Premium_StandLight"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"target_compile_options",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 44,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 48,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-Wall"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/hw/Button"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/hw/ClockCheck"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/hw/DHT11"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/hw/I2C"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/hw/LCD"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/hw/Led"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/hw/PWM"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/hw/UltraSonic"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/app/Listener"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/app/Controller"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/app/StandLightService"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/app/ClockService"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidService"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/app/StandLightView"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/app/ClockView"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidView"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16
+			]
+		}
+	],
+	"id" : "Premium_StandLight::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-rdynamic",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lwiringPi",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "Premium_StandLight",
+	"nameOnDisk" : "Premium_StandLight",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/hw/Button/Button.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/hw/ClockCheck/ClockCheck.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/hw/DHT11/DHT11.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/hw/I2C/I2C.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/hw/LCD/LCD.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/hw/Led/Led.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/hw/PWM/PWM.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/hw/UltraSonic/UltraSonic.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/Listener/Listener.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/Controller/Controller.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/StandLightService/StandLightService.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ClockService/ClockService.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/TempHumidService/TempHumidService.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/StandLightView/StandLightView.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/ClockView/ClockView.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/TempHumidView/TempHumidView.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

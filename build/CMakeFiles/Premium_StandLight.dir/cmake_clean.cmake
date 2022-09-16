@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/Premium_StandLight.dir/src/app/ClockService/ClockService.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/app/ClockService/ClockService.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/app/ClockView/ClockView.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/app/ClockView/ClockView.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/app/Controller/Controller.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/app/Controller/Controller.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/app/Listener/Listener.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/app/Listener/Listener.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/app/StandLightService/StandLightService.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/app/StandLightService/StandLightService.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/app/StandLightView/StandLightView.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/app/StandLightView/StandLightView.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/app/TempHumidService/TempHumidService.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/app/TempHumidService/TempHumidService.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/app/TempHumidView/TempHumidView.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/app/TempHumidView/TempHumidView.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/Button/Button.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/Button/Button.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/ClockCheck/ClockCheck.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/ClockCheck/ClockCheck.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/DHT11/DHT11.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/DHT11/DHT11.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/I2C/I2C.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/I2C/I2C.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/LCD/LCD.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/LCD/LCD.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/Led/Led.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/Led/Led.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/PWM/PWM.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/PWM/PWM.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/UltraSonic/UltraSonic.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/hw/UltraSonic/UltraSonic.cpp.o.d"
+  "CMakeFiles/Premium_StandLight.dir/src/main.cpp.o"
+  "CMakeFiles/Premium_StandLight.dir/src/main.cpp.o.d"
+  "Premium_StandLight"
+  "Premium_StandLight.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/Premium_StandLight.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

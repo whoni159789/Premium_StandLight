@@ -1,0 +1,3 @@
+/home/ubuntu/miniproject/Premium_StandLight/build/CMakeFiles/Premium_StandLight.dir
+/home/ubuntu/miniproject/Premium_StandLight/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/miniproject/Premium_StandLight/build/CMakeFiles/rebuild_cache.dir
