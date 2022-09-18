@@ -3,13 +3,36 @@
 
 #pragma once
 
+//hw
+#include "Button.h"
+#include "ClockCheck.h"
+#include "DHT11.h"
+#include "DHT_Data.h"
+#include "UltraSonic.h"
+
+//app
+#include "Controller.h"
+
 class Listener
 {
-public:
-    Listener();
-    ~Listener();
-
 private:
+    Button *modeButton;
+    Button *motorButton;
+    Button *clockButton;
+    Button *stopstartButton;
+    Button *resetButton;
+    ClockCheck *clockCheck;
+    DHT11 *dht11;
+    UltraSonic *ultrasonic;
+    Controller *controller;
+    
+
+public:
+    Listener(Button *modeButton, Button *motorButton, Button *clockButton, Button *stopstartButton, Button *resetButton,
+            ClockCheck *clockCheck, DHT11 *dht11, UltraSonic *ultrasonic, Controller *controller);
+    ~Listener();
+    void CheckEvent();
+
 
 };
 
