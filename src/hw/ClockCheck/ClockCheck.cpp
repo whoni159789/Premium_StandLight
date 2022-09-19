@@ -21,6 +21,7 @@ bool ClockCheck::isUpdate()
     {
         prevSec = curSec;
         return true;
+        
     }
     return false;
 }

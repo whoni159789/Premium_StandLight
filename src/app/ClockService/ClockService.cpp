@@ -60,12 +60,14 @@ void ClockService::updateTimerState(std::string strState)
                 if(strState == "stopstartButton")
                 {
                     timerState = TIMER_START;
+                    clockview->setTimerState(timerState);
                 }
                 else if(strState == "resetButton")
                 {
                     timerState = TIMER_RESET;
+                    clockview->setTimerState(timerState);
                 }
-                clockview->setTimerState(timerState);
+                
             break;
 
             case TIMER_START:
@@ -77,8 +79,9 @@ void ClockService::updateTimerState(std::string strState)
                 if(strState == "stopstartButton")
                 {
                     timerState = TIMER_TEMPSTOP;
+                    clockview->setTimerState(timerState);
                 }
-                clockview->setTimerState(timerState);
+                
             break;
 
             case TIMER_TEMPSTOP:
@@ -90,12 +93,14 @@ void ClockService::updateTimerState(std::string strState)
                 if(strState == "stopstartButton")
                 {
                     timerState = TIMER_RESTART;
+                    clockview->setTimerState(timerState);
                 }
                 else if(strState == "resetButton")
                 {
                     timerState = TIMER_RESET;
+                    clockview->setTimerState(timerState);
                 }
-                clockview->setTimerState(timerState);
+                
             break;
             
             case TIMER_RESTART:
@@ -107,8 +112,9 @@ void ClockService::updateTimerState(std::string strState)
                 if(strState == "stopstartButton")
                 {
                     timerState = TIMER_TEMPSTOP;
+                    clockview->setTimerState(timerState);
                 }
-                clockview->setTimerState(timerState);
+                
             break;
 
             case TIMER_RESET:
@@ -121,8 +127,9 @@ void ClockService::updateTimerState(std::string strState)
                 if(strState == "stopstartButton")
                 {
                     timerState = TIMER_START;
+                    clockview->setTimerState(timerState);
                 }
-                clockview->setTimerState(timerState);
+                
             break;
         }
     }

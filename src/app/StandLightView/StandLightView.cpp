@@ -1,7 +1,7 @@
 #include "StandLightView.h"
 #include "wiringPi.h"
 
-StandLightView::StandLightView(Led *light1, Led *light2, Led *light3, Led *light4, Led *light5)
+StandLightView::StandLightView(Led *light1, Led *light2, Led *light3, Led *light4, Led *light5, LCD *lcd)
 {
     this->lightState = LIGHT_OFF;
     this->light1 = light1;
@@ -9,6 +9,7 @@ StandLightView::StandLightView(Led *light1, Led *light2, Led *light3, Led *light
     this->light3 = light3;
     this->light4 = light4;
     this->light5 = light5;
+    this->lcd = lcd;
 }
 
 StandLightView::~StandLightView()
@@ -53,6 +54,7 @@ void StandLightView::lightView()
 
 void StandLightView::lightOff()
 {
+    lcd->backLightOff();
     light1->Off();
     light2->Off();
     light3->Off();
@@ -62,6 +64,7 @@ void StandLightView::lightOff()
 
 void StandLightView::lightOn1()
 {
+    lcd->backLightOn();
     light1->On();
     light2->Off();
     light3->Off();
@@ -71,6 +74,7 @@ void StandLightView::lightOn1()
 
 void StandLightView::lightOn2()
 {
+    lcd->backLightOn();
     light1->On();
     light2->On();
     light3->Off();
@@ -80,6 +84,7 @@ void StandLightView::lightOn2()
 
 void StandLightView::lightOn3()
 {
+    lcd->backLightOn();
     light1->On();
     light2->On();
     light3->On();
@@ -89,6 +94,7 @@ void StandLightView::lightOn3()
 
 void StandLightView::lightOn4()
 {
+    lcd->backLightOn();
     light1->On();
     light2->On();
     light3->On();
@@ -98,6 +104,7 @@ void StandLightView::lightOn4()
 
 void StandLightView::lightOn5()
 {
+    lcd->backLightOn();
     light1->On();
     light2->On();
     light3->On();

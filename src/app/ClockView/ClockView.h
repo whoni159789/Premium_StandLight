@@ -15,6 +15,7 @@ private:
     int timerState;
     unsigned int timerCount;
     unsigned int Temp_timerCount;
+    time_t prevTime;
     LCD *lcd;
 
 public:

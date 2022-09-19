@@ -42,7 +42,7 @@ int main()
     PWM pwm(26);
     
     // app
-    StandLightView standlightview(&led1, &led2, &led3, &led4, &led5);
+    StandLightView standlightview(&led1, &led2, &led3, &led4, &led5, &lcd);
     ClockView clockview(&lcd);
     TempHumidView temphumidview(&motorStateLed, &lcd, &pwm);
     StandLightService standlightservice(&standlightview);

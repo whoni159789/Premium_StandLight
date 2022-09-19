@@ -106,5 +106,8 @@ void StandLightService::updateDistance(int distance)
         lightState = Temp_lightState;
         Temp_lightState = LIGHT_READY;
     }
+    else if(Temp_lightState == LIGHT_READY && (distance > 0 && distance < 20))
+         StandLightOffcount = 0;
+
     standlightview->setState(lightState);
 }

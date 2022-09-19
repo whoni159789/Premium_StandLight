@@ -17,9 +17,10 @@ private:
     Led *light3;
     Led *light4;
     Led *light5;
+    LCD *lcd;
 
 public:
-    StandLightView(Led *light1, Led *light2, Led *light3, Led *light4, Led *light5);
+    StandLightView(Led *light1, Led *light2, Led *light3, Led *light4, Led *light5, LCD *lcd);
     ~StandLightView();
     void setState(int state);
     void lightView();
