@@ -1,7 +1,7 @@
 #include "StandLightView.h"
 #include "wiringPi.h"
 
-StandLightView::StandLightView(Led *light1, Led *light2, Led *light3, Led *light4, Led *light5, LCD *lcd)
+StandLightView::StandLightView(Led *light1, Led *light2, Led *light3, Led *light4, Led *light5)
 {
     this->lightState = LIGHT_OFF;
     this->light1 = light1;
@@ -9,7 +9,6 @@ StandLightView::StandLightView(Led *light1, Led *light2, Led *light3, Led *light
     this->light3 = light3;
     this->light4 = light4;
     this->light5 = light5;
-    this->lcd = lcd;
 }
 
 StandLightView::~StandLightView()

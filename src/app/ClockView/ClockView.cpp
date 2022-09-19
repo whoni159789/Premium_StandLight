@@ -33,7 +33,7 @@ void ClockView::updateTimerCount()
     switch(timerState)
     {
         case TIMER_START:
-            if(millis() - prevTimerTime >= 1000)
+            if(millis() - prevTimerTime >= 999)
             {
                 prevTimerTime = millis();
                 timerCount++;
