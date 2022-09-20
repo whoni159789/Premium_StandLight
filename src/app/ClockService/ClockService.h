@@ -15,14 +15,16 @@ private:
     time_t curTime;
     int clockState;
     int timerState;
+    unsigned int timerCount;
     ClockView *clockview;
 
 public:
     ClockService(ClockView *clockview);
     ~ClockService();
     void updateEvent();
-    void updateClockState(std::string strState);
-    void updateTimerState(std::string strState);
+    void updateModeEvent(std::string strState);
+    void updateTimerEvent(std::string strState);
+    void updateTimerCount();
 };
 
 #endif

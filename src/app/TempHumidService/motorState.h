@@ -3,6 +3,6 @@
 
 #pragma once
 
-enum {MOTOR_INACTIVE, MOTOR_ACTIVE};
+enum {MOTOR_AUTO, MOTOR_MANUAL};
 
 #endif

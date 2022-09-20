@@ -24,11 +24,12 @@
 int main()
 {
     // hw
-    Button modeButton(27);
+    Button powerButton(27);
     Button motorButton(28);
-    Button clockButton(29);
-    Button stopstartButton(2);
-    Button resetButton(3);
+    Button fanButton(29);
+    Button modeButton(2);
+    Button stopstartButton(3);
+    Button resetButton(6);
     Led led1(21);
     Led led2(22);
     Led led3(23);
@@ -49,14 +50,14 @@ int main()
     ClockService clockservice(&clockview);
     TempHumidService temphumidservice(&temphumidview);
     Controller controller(&standlightservice, &clockservice, &temphumidservice);
-    Listener listener(&modeButton, &motorButton, &clockButton, &stopstartButton, 
-                    &resetButton, &clockcheck, &dht, &ultrasonic, &controller);
+    Listener listener(&powerButton, &motorButton, &fanButton, &modeButton, &stopstartButton, &resetButton,
+                      &clockcheck, &dht, &ultrasonic, &controller);
     while(1)
     {
         listener.CheckEvent();
         standlightview.lightView();
         temphumidview.PWMView();
-        clockview.updateTimerCount();
+        clockservice.updateTimerCount();
         clockview.TimerView();
         delay(60);
     }

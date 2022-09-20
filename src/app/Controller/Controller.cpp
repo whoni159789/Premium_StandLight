@@ -15,36 +15,32 @@ Controller::~Controller()
 void Controller::updateEvent(std::string strEvent)
 {
     // Button -> Listener -> Controller -> StandLightService
-    if(strEvent == "modeButton")
-    {
-        standlightservice->updatelightState("modeButton");
-    }
+    if(strEvent == "lightButton")
+        standlightservice->updatelightState("lightButton");
+
 
     // Button -> Listener -> Controller -> TempHumidService
     if(strEvent == "motorButton")
-    {
         temphumidservice->updateTempState("motorButton");
-    }
+
+    if(strEvent == "fanButton")
+        temphumidservice->updateFanState("fanButton");
+
 
     // Button -> Listener -> Controller -> ClcokService
-    if(strEvent == "clockButton")
-    {
-        clockservice->updateClockState("clockButton");
-    }
+    if(strEvent == "modeButton")
+        clockservice->updateModeEvent("modeButton");
+
     if(strEvent == "stopstartButton")
-    {  
-        clockservice->updateTimerState("stopstartButton");
-    }
+        clockservice->updateTimerEvent("stopstartButton");
+
     if(strEvent == "resetButton")
-    {
-        clockservice->updateTimerState("resetButton");
-    }
+        clockservice->updateTimerEvent("resetButton");
+
 
     // ClockCheck -> Listener -> Controller -> ClockService
     if(strEvent == "clockUpdate")
-    {
         clockservice->updateEvent();
-    }
 }
 
 // DHT11 & DHT_Data -> Listener -> Controller -> TempHumidService

@@ -2,12 +2,13 @@
 #include "wiringPi.h"
 #include <stdio.h>
 
-Listener::Listener(Button *modeButton, Button *motorButton, Button *clockButton, Button *stopstartButton, Button *resetButton,
+Listener::Listener(Button *lightButton, Button *motorButton, Button *fanButton, Button *modeButton, Button *stopstartButton, Button *resetButton,
             ClockCheck *clockCheck, DHT11 *dht11, UltraSonic *ultrasonic, Controller *controller)
 {
-    this->modeButton = modeButton;
+    this->lightButton = lightButton;
     this->motorButton = motorButton;
-    this->clockButton = clockButton;
+    this->fanButton = fanButton;
+    this->modeButton = modeButton;
     this->stopstartButton = stopstartButton;
     this->resetButton = resetButton;
     this->clockCheck = clockCheck;
@@ -24,32 +25,26 @@ Listener::~Listener()
 void Listener::CheckEvent()
 {
     // Button -> Listener -> Controller
-    if(modeButton->getState() == RELEASE_ACTIVE)
-    {
-        controller->updateEvent("modeButton");
-    }
+    if(lightButton->getState() == RELEASE_ACTIVE)
+        controller->updateEvent("lightButton");
+
     if(motorButton->getState() == RELEASE_ACTIVE)
-    {  
         controller->updateEvent("motorButton");
-    }
-    if(clockButton->getState() == RELEASE_ACTIVE)
-    {
-        controller->updateEvent("clockButton");
-    }
+
+    if(fanButton->getState() == RELEASE_ACTIVE)
+        controller->updateEvent("fanButton");
+
+    if(modeButton->getState() == RELEASE_ACTIVE)
+        controller->updateEvent("modeButton");
     if(stopstartButton->getState() == RELEASE_ACTIVE)
-    {
         controller->updateEvent("stopstartButton");
-    }
+
     if(resetButton->getState() == RELEASE_ACTIVE)
-    {
         controller->updateEvent("resetButton");
-    }
 
     // ClockCheck -> Listener -> Controller
     if(clockCheck->isUpdate())
-    {
         controller->updateEvent("clockUpdate");
-    }
 
     // DHT11 & DHT_Data -> Listener -> Controller
     static unsigned int prevTempHumidTime = 0;

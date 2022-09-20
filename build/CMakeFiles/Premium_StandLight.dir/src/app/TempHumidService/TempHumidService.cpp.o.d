@@ -134,6 +134,7 @@ CMakeFiles/Premium_StandLight.dir/src/app/TempHumidService/TempHumidService.cpp.
  /home/ubuntu/miniproject/Premium_StandLight/./src/hw/DHT11/DHT_Data.h \
  /home/ubuntu/miniproject/Premium_StandLight/src/app/TempHumidService/TempState.h \
  /home/ubuntu/miniproject/Premium_StandLight/src/app/TempHumidService/motorState.h \
+ /home/ubuntu/miniproject/Premium_StandLight/src/app/TempHumidService/fanState.h \
  /home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidView/TempHumidView.h \
  /home/ubuntu/miniproject/Premium_StandLight/./src/hw/Led/Led.h \
  /home/ubuntu/miniproject/Premium_StandLight/./src/hw/LCD/LCD.h \

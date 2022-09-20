@@ -4,6 +4,7 @@ CMakeFiles/Premium_StandLight.dir/src/app/TempHumidView/TempHumidView.cpp.o: \
  /home/ubuntu/miniproject/Premium_StandLight/src/app/TempHumidView/TempHumidView.h \
  /home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidService/TempState.h \
  /home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidService/motorState.h \
+ /home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidService/fanState.h \
  /home/ubuntu/miniproject/Premium_StandLight/./src/hw/Led/Led.h \
  /home/ubuntu/miniproject/Premium_StandLight/./src/hw/LCD/LCD.h \
  /usr/lib/gcc/aarch64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \

@@ -16,9 +16,10 @@
 class Listener
 {
 private:
-    Button *modeButton;
+    Button *lightButton;
     Button *motorButton;
-    Button *clockButton;
+    Button *fanButton;
+    Button *modeButton;
     Button *stopstartButton;
     Button *resetButton;
     ClockCheck *clockCheck;
@@ -28,7 +29,7 @@ private:
     
 
 public:
-    Listener(Button *modeButton, Button *motorButton, Button *clockButton, Button *stopstartButton, Button *resetButton,
+    Listener(Button *lightButton, Button *motorButton, Button *fanButton, Button *modeButton, Button *stopstartButton, Button *resetButton,
             ClockCheck *clockCheck, DHT11 *dht11, UltraSonic *ultrasonic, Controller *controller);
     ~Listener();
     void CheckEvent();

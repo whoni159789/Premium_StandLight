@@ -200,4 +200,5 @@ CMakeFiles/Premium_StandLight.dir/src/main.cpp.o: \
  /home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidService/TempHumidService.h \
  /home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidService/TempState.h \
  /home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidService/motorState.h \
+ /home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidService/fanState.h \
  /home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidView/TempHumidView.h

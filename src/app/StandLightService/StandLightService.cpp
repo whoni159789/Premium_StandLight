@@ -20,7 +20,7 @@ void StandLightService::updatelightState(std::string strState)
         case LIGHT_OFF:
             if(Temp_lightState == LIGHT_READY)
             {
-                if(strState == "modeButton")
+                if(strState == "lightButton")
                 {
                     lightState = LIGHT_1;
                     standlightview->setState(lightState);
@@ -31,7 +31,7 @@ void StandLightService::updatelightState(std::string strState)
         case LIGHT_1:
             if(Temp_lightState == LIGHT_READY)
             {
-                if(strState == "modeButton")
+                if(strState == "lightButton")
                 {
                     lightState = LIGHT_2;
                     standlightview->setState(lightState);
@@ -42,7 +42,7 @@ void StandLightService::updatelightState(std::string strState)
         case LIGHT_2:
             if(Temp_lightState == LIGHT_READY)
             {
-                if(strState == "modeButton")
+                if(strState == "lightButton")
                 {
                     lightState = LIGHT_3;
                     standlightview->setState(lightState);
@@ -53,7 +53,7 @@ void StandLightService::updatelightState(std::string strState)
         case LIGHT_3:
             if(Temp_lightState == LIGHT_READY)
             {
-                if(strState == "modeButton")
+                if(strState == "lightButton")
                 {
                     lightState = LIGHT_4;
                     standlightview->setState(lightState);
@@ -64,7 +64,7 @@ void StandLightService::updatelightState(std::string strState)
         case LIGHT_4:
             if(Temp_lightState == LIGHT_READY)
             {
-                if(strState == "modeButton")
+                if(strState == "lightButton")
                 {
                     lightState = LIGHT_5;
                     standlightview->setState(lightState);
@@ -75,7 +75,7 @@ void StandLightService::updatelightState(std::string strState)
         case LIGHT_5:
             if(Temp_lightState == LIGHT_READY)
             {
-                if(strState == "modeButton")
+                if(strState == "lightButton")
                 {
                     lightState = LIGHT_OFF;
                     standlightview->setState(lightState);
@@ -89,25 +89,37 @@ void StandLightService::updatelightState(std::string strState)
 void StandLightService::updateDistance(int distance)
 {
     static unsigned int StandLightOffcount = 0;
+    static unsigned int ErrorCount = 0;
 
-    if(Temp_lightState == LIGHT_READY && distance >= 20)
+    if(distance < 0)
     {
-        StandLightOffcount++;
-        printf("카운트 : %d\n", StandLightOffcount);
-        if(StandLightOffcount >= 5)
+        ErrorCount++;
+        printf("ErrorCouunt : %d\n", ErrorCount);
+        if(ErrorCount >= 10)
+            printf("초음파 센서 고장!!!\n");
+    }
+    else
+    {
+        ErrorCount = 0;
+        if(Temp_lightState == LIGHT_READY && distance >= 20)
         {
-            Temp_lightState = lightState;
-            lightState = LIGHT_OFF;
-            StandLightOffcount = 0;
+            StandLightOffcount++;
+            printf("카운트 : %d\n", StandLightOffcount);
+            if(StandLightOffcount >= 5)
+            {
+                Temp_lightState = lightState;
+                lightState = LIGHT_OFF;
+                StandLightOffcount = 0;
+            }
         }
-    }
-    else if(Temp_lightState != LIGHT_READY && (distance > 0 && distance < 20))
-    {
-        lightState = Temp_lightState;
-        Temp_lightState = LIGHT_READY;
-    }
-    else if(Temp_lightState == LIGHT_READY && (distance > 0 && distance < 20))
-         StandLightOffcount = 0;
+        else if(Temp_lightState != LIGHT_READY && (distance > 0 && distance < 20))
+        {
+            lightState = Temp_lightState;
+            Temp_lightState = LIGHT_READY;
+        }
+        else if(Temp_lightState == LIGHT_READY && (distance > 0 && distance < 20))
+            StandLightOffcount = 0;
 
-    standlightview->setState(lightState);
+        standlightview->setState(lightState);
+    }
 }

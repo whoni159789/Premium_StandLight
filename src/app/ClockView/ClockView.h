@@ -14,8 +14,6 @@ private:
     int clockState;
     int timerState;
     unsigned int timerCount;
-    unsigned int Temp_timerCount;
-    time_t prevTime;
     LCD *lcd;
 
 public:
@@ -24,7 +22,7 @@ public:
     void updateTime(struct tm *timeData);
     void setClockState(int clockstate);
     void setTimerState(int timerstate);
-    void updateTimerCount();
+    void updateTimerTime(unsigned int count);
     void TimerView();
 
 };

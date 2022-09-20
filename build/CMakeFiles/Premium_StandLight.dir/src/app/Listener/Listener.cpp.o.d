@@ -201,6 +201,7 @@ CMakeFiles/Premium_StandLight.dir/src/app/Listener/Listener.cpp.o: \
  /home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidService/TempHumidService.h \
  /home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidService/TempState.h \
  /home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidService/motorState.h \
+ /home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidService/fanState.h \
  /home/ubuntu/miniproject/Premium_StandLight/./src/app/TempHumidView/TempHumidView.h \
  /home/ubuntu/miniproject/Premium_StandLight/./src/hw/PWM/PWM.h \
  /usr/local/include/wiringPi.h /usr/local/include/softPwm.h
